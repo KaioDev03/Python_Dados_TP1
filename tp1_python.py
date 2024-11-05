@@ -51,7 +51,7 @@ print("Exercicio 5")
 '''Abrindo o arquivo .txt para a manipulação de dados, criado uma estrutura para tratamento de dados. Para fins de redundancia no codigo. Usado o strip e o split para tal tratamento. '''
 perfis_validos = []
 
-with open("base_inicial.txt", mode="r", encoding='utf-8') as texto:
+with open("./Python_Dados_TP1/base_inicial.txt", mode="r", encoding='utf-8') as texto:
     content = texto.readlines()
 
 for linha in content:
@@ -185,7 +185,7 @@ print("-" * 40)
 #Permita que o usuário remova um amigo da lista de conexões de um membro do INFwebNET específico no dicionário criado no exercício 4.
 print("Exercicio 11")
 
-with open("rede_INFNET.txt", mode='r', encoding='utf-8') as file:
+with open("./Python_Dados_TP1/rede_INFNET.txt", mode='r', encoding='utf-8') as file:
     content = file.readlines()
     
 print(content)
@@ -198,7 +198,7 @@ for usuario in perfis:
 
 #Escreva um programa que leia o arquivo "rede_INFNET.txt" e imprima na tela a lista dos nomes de todos os usuários da rede social.
 print("Exercicio 13")
-with open('rede_INFNET.txt', mode='r', encoding='utf-8') as file:
+with open('./rede_INFNET.txt', mode='r', encoding='utf-8') as file:
     content = file.readlines()
     
     content = content.replace("{", "").replace("}", " ").replace("'", "?")
